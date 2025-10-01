@@ -8,5 +8,12 @@
     <string name="menu">Menú</string>
     <string name="perfil">Perfil</string>
     <string name="carrito">Carrito</string>
+    <string name="empezar">Empezar</string>
+    <string name="login_header">Let\'s get you signed in!</string>
+    <string name="ingresar">Ingresar</string>
+    <string name="registrar">Registrar</string>
+    <string name="correo">Correo</string>
+    <string name="passwordd">Contraseña</string>
+    <string name="olvidastes_passwordd">¿ Olvidastes tu contraseña ?</string>
 
 </resources>
