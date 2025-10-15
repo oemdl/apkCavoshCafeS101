@@ -19,5 +19,7 @@
     <string name="ingresar_con">Ingresar con</string>
     <string name="login">Login</string>
     <string name="confirmar_passwordd">Confirmar contraseña</string>
+    <string name="verificar">Verificar</string>
+    <string name="guardar">Guardar</string>
 
 </resources>

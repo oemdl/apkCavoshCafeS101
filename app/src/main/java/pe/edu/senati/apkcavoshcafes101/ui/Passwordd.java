@@ -13,10 +13,11 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import pe.edu.senati.apkcavoshcafes101.databinding.FragmentVerificarBinding;
+import pe.edu.senati.apkcavoshcafes101.R;
+import pe.edu.senati.apkcavoshcafes101.databinding.FragmentPassworddBinding;
 
-public class Verificar extends Fragment {
-    FragmentVerificarBinding binding;
+public class Passwordd extends Fragment {
+    FragmentPassworddBinding binding;
     Context context;
     View view;
     NavController navController;
@@ -29,7 +30,7 @@ public class Verificar extends Fragment {
 
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        binding = FragmentVerificarBinding.inflate(inflater,container,false);
+        binding = FragmentPassworddBinding.inflate(inflater,container,false);
         return view = binding.getRoot();
     }
 
@@ -39,6 +40,20 @@ public class Verificar extends Fragment {
         context = getContext();
         navController = Navigation.findNavController( view );
 
+        binding.tvLogin.setOnClickListener( v -> navController.navigate( R.id.navigation_login ) );
+        binding.btnActualizar.setOnClickListener( v -> btnActualizar_Click() );
+    }
+
+    private void btnActualizar_Click() {
+        String sCorreo = getArguments().getString("correo");
+
+        String sPasswordd = binding.tilPasswordd.getEditText().getText().toString().trim();
+        String sPassworddConfirmar = binding.tilPassworddConfirmar.getEditText().getText().toString().trim();
+
+        // api -> actualizar passowrdd para el correo
+        // mensaje "Actualizacion exitosa"
+
+        navController.navigate( R.id.navigation_login );
     }
 
 }
