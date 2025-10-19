@@ -14,10 +14,10 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import pe.edu.senati.apkcavoshcafes101.R;
-import pe.edu.senati.apkcavoshcafes101.databinding.FragmentVerificarBinding;
+import pe.edu.senati.apkcavoshcafes101.databinding.FragmentValidarBinding;
 
 public class Validar extends Fragment {
-    FragmentVerificarBinding binding;
+    FragmentValidarBinding binding;
     Context context;
     View view;
     NavController navController;
@@ -30,7 +30,7 @@ public class Validar extends Fragment {
 
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        binding = FragmentVerificarBinding.inflate(inflater,container,false);
+        binding = FragmentValidarBinding.inflate(inflater,container,false);
         return view = binding.getRoot();
     }
 
