@@ -43,10 +43,10 @@ public class Login extends Fragment {
         binding.tvOlvidastes.setOnClickListener( v -> navController.navigate( R.id.navigation_olvidastes ) );
         binding.tvRegistrar.setOnClickListener( v -> navController.navigate( R.id.navigation_registrar ) );
         binding.btnRegistrar.setOnClickListener( v -> navController.navigate( R.id.navigation_registrar ) );
-        binding.btnLogin.setOnClickListener( v -> btnLogin_Click() );
+        binding.btnIniciarSesion.setOnClickListener( v -> btnIniciarSesion_Click() );
     }
 
-    private void btnLogin_Click() {
+    private void btnIniciarSesion_Click() {
 
     }
 

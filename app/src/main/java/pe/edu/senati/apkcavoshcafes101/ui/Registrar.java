@@ -40,10 +40,10 @@ public class Registrar extends Fragment {
         context = getContext();
         navController = Navigation.findNavController( view );
 
-        binding.btnGuardar.setOnClickListener( v -> btnGuardar_Click() );
+        binding.btnRegistrar.setOnClickListener( v -> btnRegistrar_Click() );
     }
 
-    private void btnGuardar_Click() {
+    private void btnRegistrar_Click() {
         String sCorreo = binding.tilCorreo.getEditText().getText().toString().trim();
 
         // api -> guardar nombres, correo y password,  enviar correo con código validación

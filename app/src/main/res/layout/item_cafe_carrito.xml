@@ -16,17 +16,6 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
-    <ImageView
-        android:layout_width="36dp"
-        android:layout_height="36dp"
-        android:background="@drawable/sh_bg_circle_carmine_pink"
-        android:padding="8dp"
-        android:contentDescription="@string/content_description"
-        android:src="@drawable/ic_favoritos"
-        app:tint="@color/white"
-        app:layout_constraintBottom_toBottomOf="@id/ivProducto_itemCarrito"
-        app:layout_constraintEnd_toEndOf="@id/ivProducto_itemCarrito"/>
-
     <TextView
         android:id="@+id/tvProducto_itemCarrito"
         android:layout_width="wrap_content"
@@ -71,16 +60,46 @@
         app:layout_constraintTop_toBottomOf="@id/tvDetalle_itemCarrito"
         app:layout_constraintStart_toEndOf="@id/ivProducto_itemCarrito" />
 
-    <ImageView
-        android:layout_width="64dp"
-        android:layout_height="48dp"
-        android:background="@drawable/sh_bg_plus_carmine_pink"
-        android:padding="8dp"
-        android:contentDescription="@string/content_description"
-        android:src="@drawable/ic_plus"
-        app:tint="@color/white"
-        app:layout_constraintTop_toTopOf="@id/tvPrecio_itemCarrito"
+    <TextView
+        android:id="@+id/tvUnidades_itemCarrito"
+        android:layout_width="48dp"
+        android:layout_height="128dp"
+        android:background="@drawable/sh_bg_btn_carmine_pink"
+        android:gravity="center"
+        android:text="1"
+        android:textColor="@color/flesh"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"/>
+        app:layout_constraintEnd_toEndOf="parent" />
 
+    <ImageView
+        android:id="@+id/ivMas_itemCarrito"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="12dp"
+        android:contentDescription="@string/content_description"
+        android:clickable="true"
+        android:focusable="true"
+        android:src="@drawable/ic_plus"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:tint="@color/flesh" />
+
+    <ImageView
+        android:id="@+id/ivMenos_itemCarrito"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="12dp"
+        android:contentDescription="@string/content_description"
+        android:clickable="true"
+        android:focusable="true"
+        android:src="@drawable/ic_minus"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:tint="@color/flesh" />
+    
 </androidx.constraintlayout.widget.ConstraintLayout>

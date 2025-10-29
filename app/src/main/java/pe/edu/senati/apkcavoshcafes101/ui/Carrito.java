@@ -40,6 +40,8 @@ public class Carrito extends Fragment {
         context = getContext();
         navController = Navigation.findNavController( view );
 
+
+
     }
 
 }

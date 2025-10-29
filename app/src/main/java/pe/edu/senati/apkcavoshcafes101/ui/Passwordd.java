@@ -40,7 +40,6 @@ public class Passwordd extends Fragment {
         context = getContext();
         navController = Navigation.findNavController( view );
 
-        binding.tvLogin.setOnClickListener( v -> navController.navigate( R.id.navigation_login ) );
         binding.btnActualizar.setOnClickListener( v -> btnActualizar_Click() );
     }
 
